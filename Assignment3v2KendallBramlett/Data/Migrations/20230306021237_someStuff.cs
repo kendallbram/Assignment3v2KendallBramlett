@@ -15,11 +15,11 @@ namespace Assignment3v2KendallBramlett.Data.Migrations
                 type: "varbinary(max)",
                 nullable: true);
 
-            migrationBuilder.AddColumn<string>(
+            /*migrationBuilder.AddColumn<string>(
                 name: "IMBDLink",
                 table: "Actors",
                 type: "nvarchar(max)",
-                nullable: true);
+                nullable: true);*/
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -28,9 +28,9 @@ namespace Assignment3v2KendallBramlett.Data.Migrations
                 name: "Headshot",
                 table: "Actors");
 
-            migrationBuilder.DropColumn(
+            /*migrationBuilder.DropColumn(
                 name: "IMBDLink",
-                table: "Actors");
+                table: "Actors");*/
         }
     }
 }
